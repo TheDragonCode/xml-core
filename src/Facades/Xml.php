@@ -70,6 +70,13 @@ class Xml
         $this->appendChild($this->root, $element);
     }
 
+    public function get(): string
+    {
+        $this->doc->appendChild($this->root);
+
+        return $this->doc->saveXML();
+    }
+
     /**
      * Add new attributes.
      *
