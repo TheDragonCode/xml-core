@@ -13,7 +13,7 @@ class Url
      * @see https://secure.php.net/manual/en/function.filter-var.php
      *
      */
-    public static function isUrl(string $value): bool
+    public static function isValid(string $value): bool
     {
         return \filter_var($value, FILTER_VALIDATE_URL) !== false;
     }
