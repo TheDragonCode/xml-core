@@ -1,6 +1,6 @@
 {
     "name": "andrey-helldar/xml-core",
-    "description": "The XML Core package.",
+    "description": "Preset settings for packages that work with XML files.",
     "type": "library",
     "license": "MIT",
     "keywords": ["xml", "core"],
