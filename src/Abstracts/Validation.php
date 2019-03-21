@@ -29,7 +29,7 @@ abstract class Validation implements ValidationInterface
 
     private function validate()
     {
-        $validator = Validator::make($this->items, $this->rules());
+        $validator = Validator::make($this->items(), $this->rules());
 
         if ($validator->fails()) {
             $errors  = $validator->errors()->all();
@@ -37,5 +37,12 @@ abstract class Validation implements ValidationInterface
 
             throw new ValidatorException($message);
         }
+    }
+
+    private function items(): array
+    {
+        $items = $this->items;
+
+        return \compact('items');
     }
 }
