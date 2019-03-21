@@ -2,7 +2,9 @@
 
 namespace Helldar\Core\Xml\Helpers;
 
-class Str
+use Illuminate\Support\Str as IlluminateStr;
+
+class Str extends IlluminateStr
 {
     /**
      * Escape HTML special characters in a string.
