@@ -10,8 +10,8 @@ class Url
      * @param string $value
      *
      * @return bool
-     * @see https://secure.php.net/manual/en/function.filter-var.php
      *
+     * @see https://secure.php.net/manual/en/function.filter-var.php
      */
     public static function isValid(string $value): bool
     {
