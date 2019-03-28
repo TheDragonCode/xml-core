@@ -72,8 +72,12 @@ class Xml
         return $element;
     }
 
-    public function appendChild(DOMElement &$parent, DOMElement $child)
+    public function appendChild(DOMElement &$parent, DOMElement $child, bool $skip_empty = true)
     {
+        if ($skip_empty && !$child) {
+            return;
+        }
+
         $node = $this->doc->importNode($child, true);
 
         $parent->appendChild($node);
