@@ -63,7 +63,7 @@ class Xml
     public function appendChild(DOMElement &$parent, DOMElement $child)
     {
         $node = $this->doc->importNode($child, true);
-        
+
         $parent->appendChild($node);
     }
 
