@@ -71,7 +71,7 @@ class Xml
     {
         $this->appendChild($this->root, $element);
     }
-    
+
     public function appendToDoc(DOMElement $element)
     {
         $this->appendChild($this->doc, $element);
