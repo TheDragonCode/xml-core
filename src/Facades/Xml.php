@@ -4,6 +4,7 @@ namespace Helldar\Core\Xml\Facades;
 
 use DOMDocument;
 use DOMElement;
+use DOMImplementation;
 
 class Xml
 {
@@ -35,6 +36,17 @@ class Xml
     public static function init(string $root = 'root', array $attributes = [], bool $format_output = false): self
     {
         return new self($root, $attributes, $format_output);
+    }
+
+    public function doctype($qualified_name = null, $public_id = null, $system_id = null): self
+    {
+        $implementation = new DOMImplementation;
+
+        $doctype = $implementation->createDocumentType($qualified_name, $public_id, $system_id);
+
+        $this->doc->appendChild($doctype);
+
+        return $this;
     }
 
     public function addItem(array $parameters = [], string $element_name = 'item')
