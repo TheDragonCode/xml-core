@@ -74,7 +74,7 @@ class Xml
 
     public function appendToDoc(DOMElement $element)
     {
-        $this->appendChild($this->doc, $element);
+        $this->doc->appendChild($element);
     }
 
     public function get(): string
