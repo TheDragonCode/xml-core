@@ -62,7 +62,9 @@ class Xml
 
     public function appendChild(DOMElement &$parent, DOMElement $child)
     {
-        $parent->appendChild($child);
+        $node = $this->doc->importNode($child, true);
+        
+        $parent->appendChild($node);
     }
 
     public function appendToRoot(DOMElement $element)
