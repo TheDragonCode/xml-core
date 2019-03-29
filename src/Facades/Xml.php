@@ -83,8 +83,7 @@ class Xml
         $parent->appendChild($node);
     }
 
-    public function appendToRoot(DOMElement $element)
-    {
+    public function appendToRoot(DOMElement $element){
         $this->appendChild($this->root, $element);
     }
 
