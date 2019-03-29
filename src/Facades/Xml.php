@@ -88,11 +88,6 @@ class Xml
         $this->appendChild($this->root, $element);
     }
 
-    public function appendToDoc(DOMElement $element)
-    {
-        $this->doc->appendChild($element);
-    }
-
     public function get(): string
     {
         $this->doc->appendChild($this->root);
