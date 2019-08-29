@@ -14,7 +14,7 @@ class Xml
     /** @var \DOMElement */
     protected $root;
 
-    protected $skip_empty_values = false;
+    protected $skip_empty_attributes = false;
 
     public function __construct(string $root = 'root', array $attributes = [], bool $format_output = false)
     {
@@ -40,9 +40,9 @@ class Xml
         return new self($root, $attributes, $format_output);
     }
 
-    public function setSkipEmptyValues(): self
+    public function setSkipEmptyAttributes(): self
     {
-        $this->skip_empty_values = true;
+        $this->skip_empty_attributes = true;
 
         return $this;
     }
@@ -115,7 +115,7 @@ class Xml
     private function setAttributes(DOMElement &$element, array $attributes = [])
     {
         foreach ($attributes as $name => $value) {
-            if ($this->skip_empty_values && empty($value)) {
+            if ($this->skip_empty_attributes && empty($value)) {
                 continue;
             }
 
