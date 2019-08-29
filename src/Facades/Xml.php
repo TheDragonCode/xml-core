@@ -14,6 +14,8 @@ class Xml
     /** @var \DOMElement */
     protected $root;
 
+    protected $skip_empty_values = false;
+
     public function __construct(string $root = 'root', array $attributes = [], bool $format_output = false)
     {
         $this->doc  = new DOMDocument('1.0', 'utf-8');
@@ -36,6 +38,13 @@ class Xml
     public static function init(string $root = 'root', array $attributes = [], bool $format_output = false): self
     {
         return new self($root, $attributes, $format_output);
+    }
+
+    public function setSkipEmptyValues(): self
+    {
+        $this->skip_empty_values = true;
+
+        return $this;
     }
 
     public function doctype($qualified_name = null, $public_id = null, $system_id = null): self
@@ -106,6 +115,10 @@ class Xml
     private function setAttributes(DOMElement &$element, array $attributes = [])
     {
         foreach ($attributes as $name => $value) {
+            if ($this->skip_empty_values && empty($value)) {
+                continue;
+            }
+
             $element->setAttribute($name, $value);
         }
     }
