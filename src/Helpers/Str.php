@@ -10,11 +10,11 @@ class Str extends IlluminateStr
     /**
      * Escape HTML special characters in a string.
      *
-     * @param string $value
+     * @param \Illuminate\Contracts\Support\Htmlable|string $value
      *
      * @return string|null
      */
-    public static function e($value): ?string
+    public static function e($value = null): ?string
     {
         if (\is_null($value)) {
             return null;
