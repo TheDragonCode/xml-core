@@ -2,6 +2,7 @@
 
 namespace Helldar\Core\Xml\Helpers;
 
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str as IlluminateStr;
 
 class Str extends IlluminateStr
@@ -17,6 +18,10 @@ class Str extends IlluminateStr
     {
         if (\is_null($value)) {
             return null;
+        }
+        
+        if ($value instanceof Htmlable) {
+            return $value->toHtml();
         }
 
         return \htmlspecialchars($value, ENT_QUOTES, 'UTF-8', false);
