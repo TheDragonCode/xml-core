@@ -19,7 +19,7 @@ class Str extends IlluminateStr
         if (\is_null($value)) {
             return null;
         }
-        
+
         if ($value instanceof Htmlable) {
             return $value->toHtml();
         }
