@@ -49,7 +49,7 @@ class Xml
 
     public function doctype($qualified_name = null, $public_id = null, $system_id = null): self
     {
-        $implementation = new DOMImplementation;
+        $implementation = new DOMImplementation();
 
         $doctype = $implementation->createDocumentType($qualified_name, $public_id, $system_id);
 
