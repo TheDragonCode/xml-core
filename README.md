@@ -1,6 +1,6 @@
 # Xml Core
 
-![xml-core](https://user-images.githubusercontent.com/10347617/55163157-537be800-517a-11e9-807c-09202485b1b1.png)
+<img src="https://preview.dragon-code.pro/TheDragonCode/xml-core.svg?brand=php" width="100%" height="320" alt="XML Core"/>
 
 
 ## License
