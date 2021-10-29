@@ -1,6 +1,6 @@
 # Xml Core
 
-<img src="https://preview.dragon-code.pro/TheDragonCode/xml-core.svg?brand=php" width="100%" height="320" alt="XML Core"/>
+<img src="https://preview.dragon-code.pro/TheDragonCode/xml-core.svg?brand=php" alt="XML Core"/>
 
 
 ## License
