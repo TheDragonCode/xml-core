@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Core\Xml\Facades;
+namespace DragonCode\Core\Xml\Facades;
 
 use DOMDocument;
 use DOMElement;
@@ -29,11 +29,11 @@ class Xml
     /**
      * Initialization Xml service from static sources.
      *
-     * @param string $root
-     * @param array $attributes
-     * @param bool $format_output
+     * @param  string  $root
+     * @param  array  $attributes
+     * @param  bool  $format_output
      *
-     * @return \Helldar\Core\Xml\Facades\Xml
+     * @return \DragonCode\Core\Xml\Facades\Xml
      */
     public static function init(string $root = 'root', array $attributes = [], bool $format_output = false): self
     {
@@ -60,7 +60,7 @@ class Xml
 
     public function addItem(array $parameters = [], string $element_name = 'item')
     {
-        \ksort($parameters);
+        ksort($parameters);
 
         $section = $this->doc->createElement($element_name);
 
@@ -83,7 +83,7 @@ class Xml
 
     public function appendChild(DOMElement &$parent, DOMElement $child, bool $skip_empty = true)
     {
-        if ($skip_empty && !$child) {
+        if ($skip_empty && ! $child) {
             return;
         }
 
@@ -109,8 +109,8 @@ class Xml
      *
      * @see  https://php.net/manual/en/domelement.setattribute.php
      *
-     * @param \DOMElement $element
-     * @param array $attributes
+     * @param  \DOMElement  $element
+     * @param  array  $attributes
      */
     private function setAttributes(DOMElement &$element, array $attributes = [])
     {
