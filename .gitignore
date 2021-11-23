@@ -1,2 +1,11 @@
 .idea/
+
+build/
 vendor/
+
+*.bak
+*.cache
+*.clover
+*.orig
+
+*.lock
