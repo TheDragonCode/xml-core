@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Core\Xml\Interfaces;
+namespace DragonCode\Core\Xml\Interfaces;
 
 interface ItemInterface
 {

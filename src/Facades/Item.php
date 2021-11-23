@@ -1,8 +1,8 @@
 <?php
 
-namespace Helldar\Core\Xml\Facades;
+namespace DragonCode\Core\Xml\Facades;
 
-use Helldar\Core\Xml\Abstracts\Item as ItemAbstract;
+use DragonCode\Core\Xml\Abstracts\Item as ItemAbstract;
 
 class Item extends ItemAbstract
 {

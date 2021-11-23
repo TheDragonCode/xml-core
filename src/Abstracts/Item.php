@@ -1,8 +1,8 @@
 <?php
 
-namespace Helldar\Core\Xml\Abstracts;
+namespace DragonCode\Core\Xml\Abstracts;
 
-use Helldar\Core\Xml\Interfaces\ItemInterface;
+use DragonCode\Core\Xml\Interfaces\ItemInterface;
 
 abstract class Item implements ItemInterface
 {

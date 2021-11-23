@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Core\Xml\Helpers;
+namespace DragonCode\Core\Xml\Helpers;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str as IlluminateStr;

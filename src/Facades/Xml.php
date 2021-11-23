@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Core\Xml\Facades;
+namespace DragonCode\Core\Xml\Facades;
 
 use DOMDocument;
 use DOMElement;
@@ -33,7 +33,7 @@ class Xml
      * @param array $attributes
      * @param bool $format_output
      *
-     * @return \Helldar\Core\Xml\Facades\Xml
+     * @return \DragonCode\Core\Xml\Facades\Xml
      */
     public static function init(string $root = 'root', array $attributes = [], bool $format_output = false): self
     {

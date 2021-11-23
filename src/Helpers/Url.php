@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Core\Xml\Helpers;
+namespace DragonCode\Core\Xml\Helpers;
 
 class Url
 {

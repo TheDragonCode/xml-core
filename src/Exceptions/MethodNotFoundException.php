@@ -1,6 +1,6 @@
 <?php
 
-namespace Helldar\Core\Xml\Exceptions;
+namespace DragonCode\Core\Xml\Exceptions;
 
 use Symfony\Component\HttpKernel\Exception\HttpException;
 

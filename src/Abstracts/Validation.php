@@ -1,9 +1,9 @@
 <?php
 
-namespace Helldar\Core\Xml\Abstracts;
+namespace DragonCode\Core\Xml\Abstracts;
 
-use Helldar\Core\Xml\Exceptions\ValidatorException;
-use Helldar\Core\Xml\Interfaces\ValidationInterface;
+use DragonCode\Core\Xml\Exceptions\ValidatorException;
+use DragonCode\Core\Xml\Interfaces\ValidationInterface;
 use Illuminate\Support\Facades\Validator;
 
 abstract class Validation implements ValidationInterface
