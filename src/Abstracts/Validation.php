@@ -5,6 +5,8 @@ namespace DragonCode\Core\Xml\Abstracts;
 use DragonCode\Core\Xml\Exceptions\ValidatorException;
 use DragonCode\Core\Xml\Interfaces\ValidationInterface;
 use Illuminate\Support\Facades\Validator;
+use function compact;
+use function implode;
 
 abstract class Validation implements ValidationInterface
 {
@@ -33,7 +35,7 @@ abstract class Validation implements ValidationInterface
 
         if ($validator->fails()) {
             $errors  = $validator->errors()->all();
-            $message = \implode(PHP_EOL, $errors);
+            $message = implode(PHP_EOL, $errors);
 
             throw new ValidatorException($message);
         }
@@ -43,6 +45,6 @@ abstract class Validation implements ValidationInterface
     {
         $items = $this->items;
 
-        return \compact('items');
+        return compact('items');
     }
 }

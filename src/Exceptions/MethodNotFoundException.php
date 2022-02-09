@@ -6,7 +6,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class MethodNotFoundException extends HttpException
 {
-    public function __construct(string $message = null, ?int $code = 0)
+    public function __construct(?string $message = null, ?int $code = 0)
     {
         $code = $code ?: 405;
 

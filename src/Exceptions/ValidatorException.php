@@ -6,7 +6,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class ValidatorException extends HttpException
 {
-    public function __construct(string $message = null, int $code = 0)
+    public function __construct(?string $message = null, int $code = 0)
     {
         $message = $message ?: 'Validation error of data sent manually';
         $code    = $code ?: 400;

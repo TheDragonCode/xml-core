@@ -5,13 +5,14 @@ namespace DragonCode\Core\Xml\Facades;
 use DOMDocument;
 use DOMElement;
 use DOMImplementation;
+use function ksort;
 
 class Xml
 {
-    /** @var \DOMDocument */
+    /** @var DOMDocument */
     protected $doc;
 
-    /** @var \DOMElement */
+    /** @var DOMElement */
     protected $root;
 
     protected $skip_empty_attributes = false;
@@ -60,7 +61,7 @@ class Xml
 
     public function addItem(array $parameters = [], string $element_name = 'item')
     {
-        \ksort($parameters);
+        ksort($parameters);
 
         $section = $this->doc->createElement($element_name);
 
@@ -83,7 +84,7 @@ class Xml
 
     public function appendChild(DOMElement &$parent, DOMElement $child, bool $skip_empty = true)
     {
-        if ($skip_empty && !$child) {
+        if ($skip_empty && ! $child) {
             return;
         }
 
@@ -109,7 +110,7 @@ class Xml
      *
      * @see  https://php.net/manual/en/domelement.setattribute.php
      *
-     * @param \DOMElement $element
+     * @param DOMElement $element
      * @param array $attributes
      */
     private function setAttributes(DOMElement &$element, array $attributes = [])
