@@ -4,6 +4,7 @@ namespace DragonCode\Core\Xml\Helpers;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Str as IlluminateStr;
+
 use function htmlspecialchars;
 use function is_null;
 

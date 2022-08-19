@@ -5,6 +5,7 @@ namespace DragonCode\Core\Xml\Facades;
 use DOMDocument;
 use DOMElement;
 use DOMImplementation;
+
 use function ksort;
 
 class Xml

@@ -5,6 +5,7 @@ namespace DragonCode\Core\Xml\Abstracts;
 use DragonCode\Core\Xml\Exceptions\ValidatorException;
 use DragonCode\Core\Xml\Interfaces\ValidationInterface;
 use Illuminate\Support\Facades\Validator;
+
 use function compact;
 use function implode;
 
