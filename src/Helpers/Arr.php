@@ -14,7 +14,8 @@ class Arr
             if (is_object($item)) {
                 if (method_exists($item, 'get')) {
                     $item = $item->get();
-                } else {
+                }
+                else {
                     $item = (array) $item;
                 }
             }
