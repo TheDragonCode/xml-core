@@ -31,10 +31,6 @@ class Xml
     /**
      * Initialization Xml service from static sources.
      *
-     * @param string $root
-     * @param array $attributes
-     * @param bool $format_output
-     *
      * @return \DragonCode\Core\Xml\Facades\Xml
      */
     public static function init(string $root = 'root', array $attributes = [], bool $format_output = false): self
@@ -110,9 +106,6 @@ class Xml
      * Add new attributes.
      *
      * @see  https://php.net/manual/en/domelement.setattribute.php
-     *
-     * @param DOMElement $element
-     * @param array $attributes
      */
     private function setAttributes(DOMElement &$element, array $attributes = [])
     {

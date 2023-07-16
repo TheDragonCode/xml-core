@@ -13,9 +13,7 @@ class Str extends IlluminateStr
     /**
      * Escape HTML special characters in a string.
      *
-     * @param \Illuminate\Contracts\Support\Htmlable|string $value
-     *
-     * @return string|null
+     * @param  \Illuminate\Contracts\Support\Htmlable|string  $value
      */
     public static function e($value = null): ?string
     {
