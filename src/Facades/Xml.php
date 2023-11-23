@@ -30,8 +30,6 @@ class Xml
 
     /**
      * Initialization Xml service from static sources.
-     *
-     * @return \DragonCode\Core\Xml\Facades\Xml
      */
     public static function init(string $root = 'root', array $attributes = [], bool $format_output = false): self
     {
