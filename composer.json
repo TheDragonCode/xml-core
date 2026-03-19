@@ -34,12 +34,12 @@
     "require": {
         "php": "^7.3 || ^8.0",
         "ext-dom": "*",
-        "illuminate/support": ">=6.0 <13.0",
-        "illuminate/validation": ">=6.0 <13.0",
-        "symfony/http-kernel": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+        "illuminate/support": ">=6.0 <14.0",
+        "illuminate/validation": ">=6.0 <14.0",
+        "symfony/http-kernel": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0"
     },
     "require-dev": {
-        "symfony/var-dumper": "^5.0 || ^6.0 || ^7.0"
+        "symfony/var-dumper": "^5.0 || ^6.0 || ^7.0 || ^8.0"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
